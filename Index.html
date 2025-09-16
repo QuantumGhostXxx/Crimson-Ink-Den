@@ -20,4 +20,26 @@
     <section id="submission">
         <h2>Share Your Work</h2>
         <form id="storyForm">
-            <input type="text" id="title" placeholder="Title" required
+            <input type="text" id="title" placeholder="Title" required><br>
+            <textarea id="content" placeholder="Your story or poem..." required></textarea><br>
+            <input type="text" id="author" placeholder="Your name (optional)"><br>
+            <select id="category">
+                <option value="poetry">Poetry</option>
+                <option value="smut">Smut</option>
+                <option value="story">Short Story</option>
+                <option value="free">Free Write</option>
+            </select><br>
+            <button type="submit">Submit</button>
+        </form>
+        <p id="submissionMessage" style="display: none; color: #ff3333;"></p>
+    </section>
+    <section id="posts">
+        <h2>Recent Works</h2>
+        <div id="postList"></div>
+    </section>
+    <footer>
+        <p>Be kind, share freely, no hate.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
