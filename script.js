@@ -1,4 +1,4 @@
-// Initialize Firebase (PASTE YOUR FIREBASE CONFIG HERE)
+// Initialize Firebase
 const firebaseConfig = {
     apiKey: "AIzaSyDWM5P2fz8v_E_9n-91GIHMvIG19QwV86Y",
     authDomain: "crimson-ink-den.firebaseapp.com",
@@ -6,7 +6,7 @@ const firebaseConfig = {
     storageBucket: "crimson-ink-den.firebasestorage.app",
     messagingSenderId: "186622936412",
     appId: "1:186622936412:web:bdd9e3b48e2e32fdbaed99"
-  };
+};
 
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
