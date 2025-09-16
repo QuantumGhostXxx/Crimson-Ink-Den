@@ -48,17 +48,3 @@ function displayPosts() {
         snapshot.forEach(doc => {
             const post = doc.data();
             const postDiv = document.createElement('div');
-            postDiv.className = 'post';
-            postDiv.innerHTML = `
-                <h3>${post.title}</h3>
-                <p>${post.content}</p>
-                <p><em>By ${post.author} | ${post.category} | ${post.date}</em></p>
-            `;
-            postList.appendChild(postDiv);
-        });
-    }).catch(error => {
-        console.error('Error fetching posts: ', error);
-    });
-}
-
-displayPosts();
