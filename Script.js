@@ -1,11 +1,12 @@
-// Initialize Firebase (replace with your config from Firebase console)
+// Initialize Firebase (PASTE YOUR FIREBASE CONFIG HERE)
 const firebaseConfig = {
-    // Your Firebase config object here, e.g.:
-    // apiKey: "your-api-key",
-    // authDomain: "your-project-id.firebaseapp.com",
-    // projectId: "your-project-id",
-    // etc.
-};
+    apiKey: "AIzaSyDWM5P2fz8v_E_9n-91GIHMvIG19QwV86Y",
+    authDomain: "crimson-ink-den.firebaseapp.com",
+    projectId: "crimson-ink-den",
+    storageBucket: "crimson-ink-den.firebasestorage.app",
+    messagingSenderId: "186622936412",
+    appId: "1:186622936412:web:bdd9e3b48e2e32fdbaed99"
+  };
 
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
@@ -18,8 +19,8 @@ document.getElementById('storyForm').addEventListener('submit', function(e) {
     const content = document.getElementById('content').value;
     const author = document.getElementById('author').value || 'Anonymous';
     const category = document.getElementById('category').value;
+    const submissionMessage = document.getElementById('submissionMessage');
 
-    // Save to Firestore
     db.collection('posts').add({
         title: title,
         content: content,
@@ -27,14 +28,19 @@ document.getElementById('storyForm').addEventListener('submit', function(e) {
         category: category,
         date: new Date().toLocaleString()
     }).then(() => {
+        submissionMessage.style.display = 'block';
+        submissionMessage.textContent = 'Submission successful! Your work is now live.';
+        setTimeout(() => { submissionMessage.style.display = 'none'; }, 3000);
         displayPosts();
         this.reset();
     }).catch(error => {
+        submissionMessage.style.display = 'block';
+        submissionMessage.textContent = 'Error submitting: ' + error.message;
         console.error('Error adding post: ', error);
     });
 });
 
-// Display posts from Firestore
+// Display posts
 function displayPosts() {
     const postList = document.getElementById('postList');
     postList.innerHTML = '';
@@ -55,5 +61,4 @@ function displayPosts() {
     });
 }
 
-// Load posts on page load
 displayPosts();
