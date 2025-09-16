@@ -50,6 +50,7 @@ button {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    width: 100%; /* Ensure full width for mobile */
 }
 button:hover {
     background-color: #cc0000;
