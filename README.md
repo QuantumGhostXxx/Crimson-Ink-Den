@@ -3,7 +3,7 @@
 Welcome to **Crimson Ink Den**, a fiery, judgment-free space for bold creative writing—smut, poems, or any story that ignites your passion. Built with HTML, CSS, JavaScript, and Firebase Firestore (Standard edition), this site lets writers share and readers explore in a vibrant, black-and-red community. **Warning**: May contain NSFW content; 18+ only.
 
 ## Visit the Site
-Share your stories or poems at: [https://QuantumGhostXxx.github.io/crimson-ink-den](https://QuantumGhostXxx.github.io/crimson-ink-den). No setup needed—just write, read, and enjoy!
+Share your stories or poems at: [https://QuantumGhostxxx.github.io/crimson-ink-den](https://QuantumGhostxxx.github.io/crimson-ink-den). No setup needed—just write, read, and enjoy!
 
 ## Features
 - **Submit Freely**: Share via a simple form to Firestore Standard backend.
