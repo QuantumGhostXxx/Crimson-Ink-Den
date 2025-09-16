@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #000000; /* Black background */
+    color: #ff0000; /* Red text */
+}
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #1a1a1a; /* Dark gray for contrast */
+    color: #ff0000;
+    border-radius: 8px;
+}
+h1, h2 {
+    color: #ff3333; /* Slightly lighter red for headings */
+}
+#disclaimer {
+    text-align: center;
+    margin: 10px auto;
+    max-width: 600px;
+    color: #ff3333;
+    font-size: 0.9em;
+}
+#submission, #posts {
+    max-width: 600px;
+    margin: 20px auto;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+input, textarea, select {
+    padding: 10px;
+    background-color: #333333; /* Dark gray input fields */
+    color: #ff0000;
+    border: 1px solid #ff3333;
+    border-radius: 4px;
+    font-size: 1em;
+}
+textarea {
+    height: 150px;
+    resize: vertical;
+}
+button {
+    padding: 10px;
+    background-color: #ff3333; /* Red button */
+    color: #000000;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #cc0000; /* Darker red on hover */
+}
+.post {
+    background-color: #1a1a1a; /* Dark gray post background */
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(255, 0, 0, 0.2);
+}
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #ff3333;
+}
